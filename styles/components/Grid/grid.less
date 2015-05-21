@@ -1,0 +1,22 @@
+[data-am-grid~="row"]{
+	
+	margin-left: -@grid-gutter;
+	margin-right: -@grid-gutter;
+
+	&:after{
+		display: table;
+		content: " ";
+		clear: both;
+	}
+
+}
+
+[data-am-grid-col]{
+	padding-left: @grid-gutter;	
+	padding-right: @grid-gutter;
+}
+
+.grid-test{
+	background-color: lightGreen;
+	height: 25px;
+}
