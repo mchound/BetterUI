@@ -44,6 +44,29 @@ module.exports = {
 		{value: 'Season 1995/1996', text: 'Season 1995/1996'},
 		{value: 'Season 1994/1995', text: 'Season 1994/1995'},
 		{value: 'Season 1993/1994', text: 'Season 1993/1994'}
+	],
+
+	teams: [
+		{value: 'Chelsea', text: 'Chelsea'},
+		{value: 'Manchester City', text: 'Manchester City'},
+		{value: 'Arsenal', text: 'Arsenal'},
+		{value: 'Manchester United', text: 'Manchester United'},
+		{value: 'Tottenham', text: 'Tottenham'},
+		{value: 'Liverpool', text: 'Liverpool'},
+		{value: 'Southampton', text: 'Southampton'},
+		{value: 'Everton', text: 'Everton'},
+		{value: 'Swansea', text: 'Swansea'},
+		{value: 'West Ham', text: 'West Ham'},
+		{value: 'Aston Villa', text: 'Aston Villa'},
+		{value: 'West Bromwich', text: 'West Bromwich'},
+		{value: 'Hull', text: 'Hull'},
+		{value: 'Stoke', text: 'Stoke'},
+		{value: 'Crystal Palace', text: 'Crystal Palace'},
+		{value: 'Newcastle', text: 'Newcastle'},
+		{value: 'Sunderland', text: 'Sunderland'},
+		{value: 'Queens Park Rangers', text: ''},
+		{value: 'Liecester', text: 'Liecester'},
+		{value: 'Burnley', text: 'Burnley'},
 	]
 
 }

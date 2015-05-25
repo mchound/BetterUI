@@ -1,5 +1,7 @@
 var React = require('react');
+var Filter = require('./Filter.react.jsx');
 var BaseFilter = require('./BaseFilter.react.jsx');
+var TeamFilter = require('./TeamFilter.react.jsx');
 
 module.exports = React.createClass({
 
@@ -8,75 +10,24 @@ module.exports = React.createClass({
 		return (
 			<div data-am-dashboard-main>
 			
-				<BaseFilter />
+				<Filter title="Base Filter" preventClose={true}>
+					<BaseFilter className="margin-bottom-half" />
+				</Filter>
 
-				<div data-am-grid="row" className="margin-bottom">
-
-					<div data-am-grid-col="xs-1"><div className="grid-test"></div></div>
-
-					<div data-am-grid-col="xs-2"><div className="grid-test"></div></div>
-
-					<div data-am-grid-col="xs-3"><div className="grid-test"></div></div>
-
-					<div data-am-grid-col="xs-4"><div className="grid-test"></div></div>
-
-					<div data-am-grid-col="xs-2"><div className="grid-test"></div></div>
-
+				<div data-am-vertical-divider="" className="margin-bottom">
+					<div className="section"><h2>Team 1</h2></div>
+					<div className="section"><h2>Team 2</h2></div>
 				</div>
 
-				<div data-am-grid="row" className="margin-bottom">
+				<div data-am-grid="row">
 
-					<div data-am-grid-col="xs-5"><div className="grid-test"></div></div>
+					<div data-am-grid-col="sm-6">
+						<Filter title="Team Filter" ><TeamFilter /></Filter>
+					</div>
 
-					<div data-am-grid-col="xs-6"><div className="grid-test"></div></div>
-
-					<div data-am-grid-col="xs-1"><div className="grid-test"></div></div>
-
-				</div>
-
-				<div data-am-grid="row" className="margin-bottom">
-
-					<div data-am-grid-col="xs-7"><div className="grid-test"></div></div>
-
-					<div data-am-grid-col="xs-5"><div className="grid-test"></div></div>
-
-				</div>
-
-				<div data-am-grid="row" className="margin-bottom">
-
-					<div data-am-grid-col="xs-8"><div className="grid-test"></div></div>
-
-					<div data-am-grid-col="xs-4"><div className="grid-test"></div></div>
-
-				</div>
-
-				<div data-am-grid="row" className="margin-bottom">
-
-					<div data-am-grid-col="xs-9"><div className="grid-test"></div></div>
-
-					<div data-am-grid-col="xs-3"><div className="grid-test"></div></div>
-
-				</div>
-
-				<div data-am-grid="row" className="margin-bottom">
-
-					<div data-am-grid-col="xs-10"><div className="grid-test"></div></div>
-
-					<div data-am-grid-col="xs-2"><div className="grid-test"></div></div>
-
-				</div>
-
-				<div data-am-grid="row" className="margin-bottom">
-
-					<div data-am-grid-col="xs-11"><div className="grid-test"></div></div>
-
-					<div data-am-grid-col="xs-1"><div className="grid-test"></div></div>
-
-				</div>
-
-				<div data-am-grid="row" className="margin-bottom">
-
-					<div data-am-grid-col="xs-12"><div className="grid-test"></div></div>
+					<div data-am-grid-col="sm-6">
+						<Filter title="Team Filter" ><TeamFilter /></Filter>
+					</div>
 
 				</div>
 
@@ -84,6 +35,5 @@ module.exports = React.createClass({
 		);
 
 	}
-
 
 });

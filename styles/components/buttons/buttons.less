@@ -1,5 +1,16 @@
 [data-am-button]{
 	outline: none;
+	background-color: @clr-primary;
+	color: @clr-complementary;
+	border: none;
+	padding: 10px;
+	.elevate(1);
+	cursor: pointer;
+
+	&:hover{
+		.elevate(2);
+		background-color: darken(@clr-primary, 5%);
+	}
 }
 
 [data-am-button~="icon"]{
@@ -7,12 +18,15 @@
 	background: transparent;
 	border: none;
 	font-size: 24px;
-	cursor: pointer;
+	color: @font-color;
+	box-shadow: none;
+	padding: 0;
 
 	&:hover{
+		.elevate(0);
 		color: @clr-primary;
 		border-radius: 50%;
-		background: @clr-background;
+		background-color: transparent;
 	}
 
 }

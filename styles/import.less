@@ -1,6 +1,7 @@
 @import 'breakpoints.less';
 @import 'settings.less';
 
+@import 'mixins/utilities.less';
 @import 'mixins/elevation.less';
 
 @import 'fonts/fontello.less';
@@ -14,23 +15,28 @@
 @import 'components/Dashboard/Footer/Footer.less';
 @import 'components/Dashboard/Main/Main.less';
 @import 'components/FancySelect/fancy-select.less';
+@import 'components/FancySelect/overrides.less';
+@import 'components/toggle-slide/toggle-slide.less';
 @import 'components/Filters/Filter.less';
 @import 'components/Filters/BaseFilter.less';
-@import 'components/buttons/buttons.less';
+@import 'components/Buttons/buttons.less';
+@import 'components/VerticalDivider/VerticalDivider.less';
 @import 'components/Grid/grid.less';
+@import 'components/Grid/grid-xs.less';	
 
 @media(min-width: @screen-xs){
-	@import 'components/Grid/grid-xs.less';	
+	@import 'components/Grid/grid-sm.less';
 }
 
 @media(min-width: @screen-sm){
 	@import 'components/FancySelect/fancy-select-sm.less';	
+	@import 'components/Grid/grid-md.less';
 }
 
 @media(min-width: @screen-md){
-	
+	@import 'components/Grid/grid-lg.less';
 }
 
 @media(min-width: @screen-lg){
-	
+		
 }

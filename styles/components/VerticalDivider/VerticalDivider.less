@@ -1,0 +1,16 @@
+[data-am-vertical-divider]{
+	
+	.clearfix;
+
+	.section{
+		float: left;
+		width: 50%;
+		padding: @gutter;
+		color: lighten(@font-color, 20%);
+
+		&:first-child{
+			border-right: 1px solid darken(@clr-filter-border, 5%);
+			text-align: right;
+		}	
+	}
+}
