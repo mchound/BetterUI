@@ -1,6 +1,6 @@
 [data-am-button]{
 	outline: none;
-	background-color: @clr-primary;
+	background-color: @clr-tertiary;
 	color: @clr-complementary;
 	border: none;
 	padding: 10px;
@@ -9,7 +9,24 @@
 
 	&:hover{
 		.elevate(2);
-		background-color: darken(@clr-primary, 5%);
+		background-color: @clr-primary;
+	}
+
+	&.icon-animate i{
+		display: inline-block;
+		.animation(spin 2s infinite linear);
+	}
+}
+
+[data-am-button~="link"]{
+	background-color: transparent;
+	color: @clr-primary;
+	box-shadow: none;
+
+	&:hover{
+		.elevate(0);
+		color: darken(@clr-primary ,5%);
+		background-color: transparent;
 	}
 }
 
@@ -21,6 +38,11 @@
 	color: @font-color;
 	box-shadow: none;
 	padding: 0;
+
+	&.icon-animate{
+		display: inline-block;
+		.animation(spin 2s infinite linear);
+	}
 
 	&:hover{
 		.elevate(0);

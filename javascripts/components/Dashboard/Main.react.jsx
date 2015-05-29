@@ -15,18 +15,18 @@ module.exports = React.createClass({
 				</Filter>
 
 				<div data-am-vertical-divider="" className="margin-bottom">
-					<div className="section"><h2>Team 1</h2></div>
-					<div className="section"><h2>Team 2</h2></div>
+					<div className="section"><h2>T 1</h2></div>
+					<div className="section"><h2>T 2</h2></div>
 				</div>
 
 				<div data-am-grid="row">
 
 					<div data-am-grid-col="sm-6">
-						<Filter title="Team Filter" ><TeamFilter /></Filter>
+						<Filter title="T Filter" ><TeamFilter /></Filter>
 					</div>
 
 					<div data-am-grid-col="sm-6">
-						<Filter title="Team Filter" ><TeamFilter /></Filter>
+						<Filter title="T Filter" ><TeamFilter /></Filter>
 					</div>
 
 				</div>

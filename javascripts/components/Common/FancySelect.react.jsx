@@ -1,5 +1,4 @@
 var React = require('react');
-var arrz = require('arrz');
 
 module.exports = React.createClass({
 
@@ -24,9 +23,6 @@ module.exports = React.createClass({
 
 		var optionsClassName = this.state.showOptions ? 'fold-out' : 'fold-out hide-above';
 		var search = null;
-		var attr = '';
-		attr += this.props.multiple ? 'multiple' : '';
-		attr += this.props.searchable ? ' searchable' : '';
 
 		if(this.props.searchable){
 			search = (
@@ -37,7 +33,7 @@ module.exports = React.createClass({
 		}
 
 		return (
-			<div data-am-fancyselect={attr}>
+			<div data-am-fancyselect={this._getAttrs()}>
 
 				<div className="select" onClick={this._onSelectClick}>
 					{this._getLabel()}
@@ -66,6 +62,17 @@ module.exports = React.createClass({
 
 			</div>
 		);
+
+	},
+
+	_getAttrs: function(){
+		var attrs = [];
+		var propAttrs = this.props.attributes || [];
+
+		if(this.props.multiple) attrs.push('multiple');
+		if(this.props.searchable) attrs.push('searchable');
+		
+		return attrs.concat(propAttrs).join(' ');
 
 	},
 

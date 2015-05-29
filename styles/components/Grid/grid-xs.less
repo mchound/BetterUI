@@ -1,3 +1,7 @@
+body.grid-info:after{
+	content: "XS";
+}
+
 [data-am-grid-col],
 [data-am-grid-col-xs]{
 	float: left;
@@ -6,6 +10,16 @@
 [data-am-grid-col~="mb-xs"],
 [data-am-grid-col-xs~="mb"]{
 	margin-bottom: @gutter;
+}
+
+[data-am-grid-col~="mb-xs-half"],
+[data-am-grid-col-xs~="mb-half"]{
+	margin-bottom: @gutter-half;
+}
+
+[data-am-grid-col~="mb-xs-double"],
+[data-am-grid-col-xs~="mb-double"]{
+	margin-bottom: @gutter-double;
 }
 
 [data-am-grid-col~="mb-xs-0"],
@@ -135,4 +149,9 @@
 [data-am-grid-col~="o-xs-12"],
 [data-am-grid-col-xs~="o-12"]{
 	margin-left: (100/(12 / 12)) * 1%;
+}
+
+[data-am-grid-col~="xs-auto"],
+[data-am-grid-col-xs~="auto"]{
+	width: auto;
 }

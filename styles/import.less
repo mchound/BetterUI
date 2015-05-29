@@ -15,7 +15,7 @@
 @import 'components/Dashboard/Footer/Footer.less';
 @import 'components/Dashboard/Main/Main.less';
 @import 'components/FancySelect/fancy-select.less';
-@import 'components/FancySelect/overrides.less';
+@import 'components/FancySelect/fancy-select-override.less';
 @import 'components/toggle-slide/toggle-slide.less';
 @import 'components/Filters/Filter.less';
 @import 'components/Filters/BaseFilter.less';
@@ -29,14 +29,17 @@
 }
 
 @media(min-width: @screen-sm){
-	@import 'components/FancySelect/fancy-select-sm.less';	
+	@import 'components/FancySelect/fancy-select-sm.less';
 	@import 'components/Grid/grid-md.less';
 }
 
 @media(min-width: @screen-md){
 	@import 'components/Grid/grid-lg.less';
+	@import 'components/Buttons/buttons-lg.less';
 }
 
 @media(min-width: @screen-lg){
-		
+	@import 'components/Grid/grid-xl.less';
+	@import 'components/FancySelect/fancy-select-xl.less';
+	@import 'components/Buttons/buttons-xl.less';
 }

@@ -1,7 +1,20 @@
-.clearfix{
-	&:after{
-		display: table;
-		clear: both;
-		content: "";
-	}
+.transform(@transform){
+	-moz-transform: @transform;
+    -o-transform: @transform;
+    -webkit-transform: @transform;
+    transform: @transform;
+}
+
+.transition(@transition){
+	-moz-transition: @transform;
+    -o-transition: @transform;
+    -webkit-transition: @transform;
+    transition: @transform;	
+}
+
+.animation(@animation){
+	-moz-animation: @animation;
+	-o-animation: @animation;
+	-webkit-animation: @animation;
+	animation: @animation;
 }
